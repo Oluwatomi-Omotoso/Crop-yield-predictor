@@ -80,7 +80,7 @@ CROP YIELD PREDICTOR/
 
 | Area                | Tools                             |
 | ------------------- | --------------------------------- |
-| Language            | Python 3                          |
+| Language            | Python 3.13                          |
 | ML Framework        | scikit-learn, PyTorch             |
 | Data Processing     | pandas, NumPy                     |
 | Visualisation       | Matplotlib, Seaborn               |
