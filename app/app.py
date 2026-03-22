@@ -32,10 +32,10 @@ def load_assets():
 
     # Load NN assets
     nn_model = CropYieldModel(input_size, output_size=1)
-    nn_model.load_state_dict(torch.load(os.path.abspath(os.path.join(os.path.dirname"../ML/models/NN_Models/neural_net.pth"))
+    nn_model.load_state_dict(torch.load(os.path.abspathos.path.join(BASE_DR, dirname"../ML/models/NN_Models/neural_net.pth"))
     nn_model.eval()
 
-    scaler = joblib.load("../ML/models/NN_Models/scaler.pkl")
+    scaler = joblib.load(os.path.join(BASE_DIR),"ML/models/NN_Models/scaler.pkl")
     cat_mappings = joblib.load("../ML/models/NN_Models/category_mappings.pkl")
 
     # load pipeline model(Random_Forest)
