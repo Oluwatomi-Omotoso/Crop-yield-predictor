@@ -7,7 +7,7 @@ import sys, os
 import plotly.express as px
 import plotly.graph_objects as go
 
-sys.path.append(os.path.abspath("../"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from ML.pipelines.train_and_evaluate import CropYieldModel
 from ML.pipelines.train_and_evaluate import calc_r2_score
 
