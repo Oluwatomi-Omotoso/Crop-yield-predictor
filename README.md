@@ -137,11 +137,4 @@ Two modelling approaches were explored and benchmarked:
 
 Raw files are merged and cleaned into `Final_dataset.csv` during preprocessing.
 
-```
-    __ _ _
-  / ____| |
- | |    | |__   ___  ___ _ __   ___
- | |    | '_ \ / _ \/ _ \ '__|/ __|
- | |____| | | |  __/  __/ |   \__ \
-  \_____|_| |_|\___|\___|_|   |___/
-```
+
