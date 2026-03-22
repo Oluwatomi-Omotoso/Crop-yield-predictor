@@ -7,6 +7,7 @@ import sys, os
 import plotly.express as px
 import plotly.graph_objects as go
 
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from ML.pipelines.train_and_evaluate import CropYieldModel
 from ML.pipelines.train_and_evaluate import calc_r2_score
@@ -31,7 +32,7 @@ def load_assets():
 
     # Load NN assets
     nn_model = CropYieldModel(input_size, output_size=1)
-    nn_model.load_state_dict(torch.load("../ML/models/NN_Models/neural_net.pth"))
+    nn_model.load_state_dict(torch.load(os.path.abspath(os.path.join(os.path.dirname"../ML/models/NN_Models/neural_net.pth"))
     nn_model.eval()
 
     scaler = joblib.load("../ML/models/NN_Models/scaler.pkl")
